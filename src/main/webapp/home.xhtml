@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Citybook -Directory Listing Template</title>
+        <meta charset="UTF-8"/>        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============-->
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/css/reset.css"/>
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/css/plugins.css"/>
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/css/color.css"/>
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="#{request.contextPath}/images/favicon.ico"/>
+    </h:head>
+    <h:body>
+        
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="pin"></div>
+            <div class="pulse"></div>
+        </div>
+        <!--loader end-->
+        <!-- Main  -->
+        
+        <div id="main">
+            <!-- header-->
+            <header class="main-header dark-header fs-header sticky">
+            <ui:insert name="header">
+                <ui:include src="/template/default/header.xhtml"></ui:include>
+            </ui:insert>
+            </header>
+            <!--  header end -->
+            
+            <!--  wrapper  -->
+            <div id="wrapper">
+                <!-- Content-->
+                <div class="content">
+                    <ui:insert name="content">
+                        <ui:include src="/template/default/content.xhtml"></ui:include>
+                    </ui:insert>
+                </div>
+                <!-- Content End-->
+            </div>
+            <!-- wrapper end -->
+            
+            <!--footer -->
+            <footer class="main-footer dark-footer  ">
+                <ui:insert name="footer">
+                    <ui:include src="/template/default/footer.xhtml"></ui:include>
+                </ui:insert>
+            </footer>
+            <!--footer end  -->
+            <a class="to-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+        
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->     
+        <script type="text/javascript" src="#{request.contextPath}/js/jquery.min.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/js/plugins.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/js/scripts.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAufCUbv5v426fzYqx9xuej75qt5kcALso&amp;libraries=places&amp;callback=initAutocomplete"></script>
+    </h:body>
+</html>

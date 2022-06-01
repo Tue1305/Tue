@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      >
+
+    <ui:composition template="template/default/template.xhtml">
+        <ui:define name="content">
+            <!--  content  --> 
+            <div class="content">
+                <!--  section  --> 
+                <section class="parallax-section" data-scrollax-parent="true" id="sec1">
+                    <div class="bg par-elem "  data-bg="images/bg/29.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                    <div class="overlay"></div>
+                    <div class="bubble-bg"></div>
+                    <div class="container">
+                        <div class="error-wrap">
+                            <h2>404</h2>
+                            <p>We're sorry, but the Page you were looking for, couldn't be found.</p>
+                            <div class="clearfix"></div>
+                            <form action="404.html#">
+                                <input name="se" id="se" type="text" class="search" placeholder="Search.." value="Search..."/>
+                                    <button class="search-submit" id="submit_btn"><i class="fa fa-search transition"></i> </button>
+                            </form>
+                            <div class="clearfix"></div>
+                            <p>Or</p>
+                            <a href="index.html" class="btn  big-btn  color-bg flat-btn">Back to Home Page<i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <!--  section  end--> 
+                <!--  section  --> 
+                <section class="gradient-bg">
+                    <div class="cirle-bg">
+                        <div class="bg" data-bg="images/bg/circle.png"></div>
+                    </div>
+                    <div class="container">
+                        <div class="join-wrap fl-wrap">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h3>Join our online community</h3>
+                                    <p>Grow your marketing and be happy with your online business</p>
+                                </div>
+                                <div class="col-md-4"><a href="404.html#" class="join-wrap-btn modal-open">Sign Up <i class="fa fa-sign-in"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--  section end --> 
+                <div class="limit-box"></div>
+            </div>
+            <!--  content end  -->         </ui:define>
+    </ui:composition>
+</html>    
